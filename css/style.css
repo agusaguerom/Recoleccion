@@ -2,6 +2,7 @@ body{
     background-color: #F5F5F5;
 }
 
+
 #tituloindex{
     text-align: center;
     margin-top: 25px;
@@ -45,36 +46,13 @@ body{
     background-color: #402f68;
     transition: 0.2s ease;
 }
-.containerfondo {
-    height: auto;
-    overflow: hidden;
-}
 
-  .containerfondo img{
-    width: 100%;
-    height: auto; 
-  }
-.containerfondo{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
- .fondo{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
- }
-
-.cardAldeano {
-    width: 200px; 
-    padding: 20px; 
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
-    background-color: #f9f9f9; 
-    text-align: left; 
-    position: absolute; 
-    top: 50%; 
-    left: 50px; 
-    transform: translateY(-50%); 
-}
     
+.headerplay {
+    justify-content: center;
+    display: flex;
+
+}
+.carddatos{
+    width: 10%;    
+}
