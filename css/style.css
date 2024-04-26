@@ -1,0 +1,29 @@
+body{
+    background-color: #F5F5F5;
+}
+
+#tituloindex{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.contenedorcards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    margin: 20px;
+}
+
+.card-body{
+    width: 100%;
+}
+
+.inputpersonaje{
+    
+}
