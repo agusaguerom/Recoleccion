@@ -18,10 +18,10 @@
     <h5 class="card-title">Aldeano</h5>
     <p class="card-text">Descripcion Aldeano</p>
     
-    <form action="" method="post">
-        <label for="nombrepescador">Nombre: </label>
-        <input class ="inputpersonaje" type="text" name="nombrealdeano" value="Pepe">
-        <input class = "submitpersonajes" type="submit" value="Confirmar">
+    <form action="play.php" method="post">
+        <label for="nombrealdeano">Nombre: </label>
+        <input class ="inputpersonaje" type="text" name="nombrealdeano" id="nombrealdeano" value="Pepe">
+        <input class = "submitpersonajes" type="submit"  value="Confirmar">
       </form>
   </div>
 </div>
@@ -33,9 +33,10 @@
       <h5 class="card-title">Pescador</h5>
       <p class="card-text">Descripcion Pescador</p>
 
-      <form action="" method="post">
+      <form action="play.php" method="post">
+        <input class ="inputpersonaje" type="hidden" value="pescador">
         <label for="nombrepescador">Nombre: </label>
-        <input class ="inputpersonaje" type="text" name="nombrepescador" value="Jose">
+        <input class ="inputpersonaje" type="text" name="nombrepescador" id ="nombrepescador" value="Jose">
         <input class = "submitpersonajes" type="submit" value="Confirmar">
       </form>
 
