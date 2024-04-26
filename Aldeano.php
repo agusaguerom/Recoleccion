@@ -13,7 +13,7 @@
             $this->nombre = $set;
         }
 
- 
+        
 
     function recolectar($arbusto){
 
