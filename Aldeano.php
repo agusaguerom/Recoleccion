@@ -2,7 +2,7 @@
 
     class Aldeano {
         
-        function __construct($nombre, $velocidadrecoleccion = 19){
+        function __construct($nombre, $velocidadrecoleccion = 18){
         $this->nombre = $nombre;
         $this->velocidadrecoleccion = $velocidadrecoleccion;
     }
