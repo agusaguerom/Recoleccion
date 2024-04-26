@@ -1,7 +1,9 @@
 body{
     background-color: #F5F5F5;
 }
-
+#playbody{
+    background-color: rgb(146, 197, 146);
+}
 
 #tituloindex{
     text-align: center;
@@ -47,12 +49,4 @@ body{
     transition: 0.2s ease;
 }
 
-    
-.headerplay {
-    justify-content: center;
-    display: flex;
 
-}
-.carddatos{
-    width: 10%;    
-}
