@@ -17,6 +17,8 @@ body{
 }
 
 .card{
+    color: #000;
+    background-color: #00D5FF;
     margin: 20px;
 }
 
@@ -25,5 +27,21 @@ body{
 }
 
 .inputpersonaje{
-    
+    color: #000;
+    background-color: #05060f0a;
+    border-radius: 0.5rem;
+    border: 2px solid #05060f0a;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.submitpersonajes{
+    color: #F5F5F5;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+.submitpersonajes:hover{
+    background-color: #402f68;
+    transition: 0.2s ease;
 }
