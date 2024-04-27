@@ -21,7 +21,8 @@
         
 
     function recolectar($arbusto){
-        ceil($arbusto->getAlimento ) ;
+        $tiemporecoleccion = ceil($arbusto->getAlimento() / $this->velocidadrecoleccion) ;
+        echo "<h1> El aldeano recolecto todo en ". $tiemporecoleccion ." minutos<h1>";
     }
 
 }
