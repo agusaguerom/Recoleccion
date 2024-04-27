@@ -34,7 +34,7 @@ $Arbusto1 = new Arbusto();
             echo "<p class=velrecoleccion> Vel. Recoleccion: <br>" . $Aldeano1->velocidadrecoleccion . "</p>";
             echo "<p class=nombrealdeano> Nombre: <br>" . $Aldeano1->nombre . "</p>";
 
-            $Aldeano1->recolectar($Arbusto1->cantidadAlimento);
+            $Aldeano1->recolectar($Arbusto1);
 
             ?>
             </div>
