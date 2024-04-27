@@ -49,4 +49,24 @@ body{
     transition: 0.2s ease;
 }
 
+.arbustoimg{
+    width: 240px;
+    height: 270px;
+    margin: auto;
+}
 
+.centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.datosaldeano{
+    margin: 20px;
+}
+
+.velrecoleccion, .nombrealdeano{
+    font-size: 2em;
+    text-align: center;
+}
