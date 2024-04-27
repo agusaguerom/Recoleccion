@@ -7,7 +7,7 @@
         $this->velocidadrecoleccion = $velocidadrecoleccion;
     }
         function getNombre(){
-            return this->nombre;
+            return $this->nombre;
         }
         function getVelocidadrecoleccion(){
             return $this->velocidadrecoleccion;
