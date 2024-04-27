@@ -7,11 +7,10 @@ class Arbusto{
     }
 
     function getAlimento(){
-        echo $this->cantidadAlimento;
+        return $this->cantidadAlimento;
     }
 
 }
 
-$Arbusto1 = new Arbusto();
 
 ?>
