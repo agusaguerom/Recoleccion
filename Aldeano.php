@@ -16,7 +16,7 @@
         
 
     function recolectar($arbusto){
-
+        
     }
 
 }
