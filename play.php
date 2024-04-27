@@ -1,6 +1,11 @@
 <?php
 require_once("Aldeano.php");
 require_once("Arbusto.php");
+
+
+$Aldeano1 = new Aldeano ($leer);
+$Arbusto1 = new Arbusto();
+
 ?>
 
 <!DOCTYPE html>
@@ -19,16 +24,17 @@ require_once("Arbusto.php");
     <div class="row sprites">
         <div class="arbusto col">
             <img src="img/Arbusto.png" alt="Arbusto imagen" class="arbustoimg">
+            <button class="recolectar">Recolectar</button>
         </div>
         <div class="aldeano col">
             <img src="img/spritealdeano.png" alt="Aldeano Imagen">
-
             <div class="datosaldeano">
             <?php
             
-            echo "<p class=velrecoleccion> Vel. Recoleccion " . $Aldeano1->velocidadrecoleccion . "</p>";
-            echo "<p class=nombrealdeano> Nombre </p>";
-            echo "<p class=nombrealdeano>". $Aldeano1->nombre ." </p>";
+            echo "<p class=velrecoleccion> Vel. Recoleccion: <br>" . $Aldeano1->velocidadrecoleccion . "</p>";
+            echo "<p class=nombrealdeano> Nombre: <br>" . $Aldeano1->nombre . "</p>";
+
+            $Aldeano1->recolectar($Arbusto1->cantidadAlimento);
 
             ?>
             </div>
@@ -37,6 +43,7 @@ require_once("Arbusto.php");
         </div>
         <div class="arbusto col">
             <img src="img/Arbusto.png" alt="Arbusto imagen" class="arbustoimg">
+            <button>Recolectar</button>
         </div>
     </div>
     </div>
