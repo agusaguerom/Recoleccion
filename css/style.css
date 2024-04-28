@@ -78,3 +78,17 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+.contenedorrec{
+    text-align: center;
+}
+#btnrecolectar{
+    background-color: #402f68;
+}
+.contenedorrecolector{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.titulorecolectar{
+    text-align: center;
+}
