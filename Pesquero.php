@@ -50,7 +50,7 @@ class Pesquero{
             <h1 class=titulorecolectar> El Pescador recolecto todo en ". $tiemporecoleccion ." minutos<h1>
         
             </div>
-            <h2 class=titulorecolectar>EL Banco de Pesca quedo vacio</h2>
+            <h2 class=titulorecolectar>EL Lago quedo vacio</h2>
             ";
 
             $totalrecolectado = $this->getTotalrecolectado();
