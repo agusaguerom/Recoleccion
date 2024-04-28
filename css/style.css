@@ -1,6 +1,9 @@
 body{
     background-color: #F5F5F5;
 }
+.bodyaldeano{
+    background-color: #00D5FF;
+}
 #playbody{
     background-color: rgb(146, 197, 146);
 }
@@ -47,4 +50,31 @@ body{
 .submitpersonajes:hover{
     background-color: #402f68;
     transition: 0.2s ease;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.aldeanogif{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+}
+.imgaldeano{
+    justify-content: center;
+    align-items: center;
+}
+
+.arbustoimg{
+    height: 200px;
+    width: 200px;
+}
+
+.contenedorimgs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
