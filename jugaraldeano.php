@@ -3,7 +3,11 @@
     require_once("Arbusto.php");
     $Arbusto = new Arbusto();
 
+    $Aldeano = new Aldeano($nombrea);
 
+    if(isset($_POST['recoleccion'])){
+        $Aldeano->recolectar($Arbusto);
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +31,7 @@
             <div class="card-header">Aldeano</div>
             <div class="card-body">
                 <h5 class="card-title">Cantidad Recoleccion</h5>
-                <p class="card-text"><?php echo $Aldeano->totalrecolectado; ?></p>
+                <p class="card-text"><?php echo $Aldeano->getTotalrecolectado(); ?></p>
             </div>
         </div>
 
@@ -35,7 +39,7 @@
             <div class="card-header">Aldeano</div>
             <div class="card-body">
                 <h5 class="card-title">Velocidad Recoleccion</h5>
-                <p class="card-text"><?php echo $Aldeano->velocidadrecoleccion; ?></p>
+                <p class="card-text"><?php echo $Aldeano->getVelocidadrecoleccion(); ?></p>
             </div>
         </div>
 
@@ -43,7 +47,7 @@
             <div class="card-header">Aldeano</div>
             <div class="card-body">
                 <h5 class="card-title">Nombre</h5>
-                <p class="card-text"><?php echo $Aldeano->nombre; ?></p>
+                <p class="card-text"><?php echo $Aldeano->getNombre(); ?></p>
             </div>
         </div>
 
@@ -70,11 +74,7 @@
 
     </div>
 
-    <?php
-        if(isset($_POST['recoleccion'])){
-          $Aldeano->recolectar($Arbusto);
-        }
-    ?>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
