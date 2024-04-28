@@ -35,17 +35,25 @@
         
 
     function recolectar($arbusto){
-        $tiemporecoleccion = ceil($arbusto->getAlimento() / $this->velocidadrecoleccion) ;
-        echo "<div class=contenedorrecolector>
-        <h1 class=titulorecolectar> El aldeano recolecto todo en ". $tiemporecoleccion ." minutos<h1>
-        </div>
-        ";
 
-        $totalrecolectado = $this->getTotalrecolectado();
-        $totalrecolectado += $arbusto->getAlimento();
-        $this->SetTotalrecolectado($totalrecolectado);
+        if($arbusto->getALimento() > 0){
 
-        $arbusto->setAlimento(0);
+            $tiemporecoleccion = ceil($arbusto->getAlimento() / $this->velocidadrecoleccion) ;
+            echo "<div class=contenedorrecolector>
+            <h1 class=titulorecolectar> El aldeano recolecto todo en ". $tiemporecoleccion ." minutos<h1>
+        
+            </div>
+            <h2 class=titulorecolectar>EL arbusto quedo vacio</h2>
+            ";
+    
+            $totalrecolectado = $this->getTotalrecolectado();
+            $totalrecolectado += $arbusto->getAlimento();
+            $this->SetTotalrecolectado($totalrecolectado);
+    
+            $arbusto->setAlimento(0);
+        }else if($arbusto->getALimento = 0){
+            echo "<h1>El arbusto esta vacio</h1>";
+        }
     }
 
   
