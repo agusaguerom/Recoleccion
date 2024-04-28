@@ -37,7 +37,8 @@
     function recolectar($arbusto){
 
         if($arbusto->getALimento() > 0){
-
+            
+            
             $tiemporecoleccion = ceil($arbusto->getAlimento() / $this->velocidadrecoleccion) ;
             echo "<div class=contenedorrecolector>
             <h1 class=titulorecolectar> El aldeano recolecto todo en ". $tiemporecoleccion ." minutos<h1>
