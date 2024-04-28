@@ -92,3 +92,18 @@ body{
 .titulorecolectar{
     text-align: center;
 }
+.contenedorimagenes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contenedorrecolectar{
+    display: flex;
+    justify-content: center;
+}
+.formrecolectar{
+    margin: 50px;
+}
+.arbustocontenedor{
+    width: auto;
+}
