@@ -19,7 +19,7 @@
     <title>Aldeano</title>
 </head>
 
-<body class="bodyaldeano">
+<body class="fondo2">
 
 <div class="container">
 
