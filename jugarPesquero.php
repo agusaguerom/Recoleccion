@@ -4,6 +4,11 @@ require_once("BancoDePesca.php");
 
 $Pesquero = new Pesquero($nombrea);
 $BancodePesca = new BancoDePesca();
+
+
+if(isset($_POST['pescar'])){
+    $Pesquero->recolectar($BancodePesca);
+}
 ?>
 
 <!DOCTYPE html>
@@ -15,18 +20,19 @@ $BancodePesca = new BancoDePesca();
     <link rel="stylesheet" href="css/style.css">
     <title>Pesquero</title>
 </head>
-<body>
+<body class="fondo2">
     
+
 <div class="container">
 
     <div class="row containerinfo">
 
-        <div class="contenedoraldeano col"></div>
+        <div class="contenedoraldeano"></div>
 
         <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
             <div class="card-header">Pesquero</div>
             <div class="card-body">
-                <h5 class="card-title">Peces Recolectadas</h5>
+                <h5 class="card-title">Peces Recolectados</h5>
                 <p class="card-text"><?php echo $Pesquero->getTotalrecolectado(); ?></p>
             </div>
         </div>
@@ -49,13 +55,27 @@ $BancodePesca = new BancoDePesca();
 
     </div>
 
-    <div class="row">
-        <div class="containerpesquero">
-            <img src="img/Pescador.gif" alt="">
-        </div>
-    </div>
+    
 
 </div>
+
+<div class="row contenedorimagenes">
+<div class='aldeanogif col-6'>
+        <?php
+        echo  
+        "<img src=". $Pesquero->getimgpescador() ." class=imgaldeano alt=Imagen Aldeano>"
+
+        ?>
+    </div>
+
+
+    <div class="contenedorrecolectar">
+      <form method="post" class="formPescar">
+        <input type="submit" class="submitpersonajes" name="pescar" value="Pescar" >
+      </form>
+    </div>
+
+    </div>
 
 
 
