@@ -51,8 +51,6 @@
             $this->SetTotalrecolectado($totalrecolectado);
     
             $arbusto->setAlimento(0);
-        }else if($arbusto->getALimento = 0){
-            echo "<h1>El arbusto esta vacio</h1>";
         }
     }
 
