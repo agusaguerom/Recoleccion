@@ -1,0 +1,10 @@
+<?php
+
+class BancoDePesca{
+    function __construct($cantidadAlimento = 225){
+        $this->cantidadAlimento = $cantidadAlimento;
+    }
+    
+}
+
+?>
