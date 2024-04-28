@@ -1,6 +1,11 @@
 <?php
     require_once("Arbusto.php");
-    $leer = "";
+
+    $nombrea = "Pepe";
+    if(isset($_POST['nombrealdeano']) && $_POST['nombrealdeano'] != ""){
+        $nombrea = $_POST['nombrealdeano'];
+    }
+
     class Aldeano {
         
         function __construct($nombre="Pepe", $velocidadrecoleccion = 18, $totalrecolectado = 0){
@@ -31,14 +36,20 @@
 
     function recolectar($arbusto){
         $tiemporecoleccion = ceil($arbusto->getAlimento() / $this->velocidadrecoleccion) ;
-        echo "<h1> El aldeano recolecto todo en ". $tiemporecoleccion ." minutos<h1>";
+        echo "<div class=contenedorrecolector>
+        <h1 class=titulorecolectar> El aldeano recolecto todo en ". $tiemporecoleccion ." minutos<h1>
+        </div>
+        ";
+
+        $totalrecolectado = $this->getTotalrecolectado();
+        $this->SetTotalrecolectado($totalrecolectado);
+
+        $arbusto->setAlimento($arbusto->getAlimento() - $arbusto->getAlimento());
     }
 
   
 
 }
-if(isset($_POST['nombrealdeano']) && ($_POST['nombrealdeano'] != "")) {
-    $leer = $_POST['nombrealdeano'];
-} 
+$Aldeano = new Aldeano($nombrea);
 
 ?>
