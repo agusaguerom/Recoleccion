@@ -107,3 +107,8 @@ body{
 .arbustocontenedor{
     width: auto;
 }
+.containerpesquero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
