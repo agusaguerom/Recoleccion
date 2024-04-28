@@ -1,7 +1,11 @@
 <?php
     require_once('Aldeano.php');
+    require_once("Arbusto.php");
+    $Arbusto = new Arbusto();
 
-    $Aldeano = new Aldeano($leer):
+    
+
+    $Aldeano = new Aldeano($leer);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,19 +14,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Aldeano</title>
 </head>
-<body>
+
+<body class="bodyaldeano">
+
+<div class="container">
+
+    <div class="row containerinfo">
+
+        <div class="contenedoraldeano"></div>
+
+        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+            <div class="card-header">Aldeano</div>
+            <div class="card-body">
+                <h5 class="card-title">Cantidad Recoleccion</h5>
+                <p class="card-text"><?php echo $Aldeano->totalrecolectado; ?></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+            <div class="card-header">Aldeano</div>
+            <div class="card-body">
+                <h5 class="card-title">Velocidad Recoleccion</h5>
+                <p class="card-text"><?php echo $Aldeano->velocidadrecoleccion; ?></p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+            <div class="card-header">Aldeano</div>
+            <div class="card-body">
+                <h5 class="card-title">Nombre</h5>
+                <p class="card-text"><?php echo $Aldeano->nombre; ?></p>
+            </div>
+        </div>
+
+    </div>
+
     
-<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Success card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
 
+</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+<div class="row col-12">
+<div class='aldeanogif col'>
+        <img src="img/Aldeano.gif" class="imgaldeano" alt="Imagen Aldeano">
+    </div>
+
+    <div class="arbustocontenedor col">
+    <img src="img/Arbusto.png" class= "arbustoimg" alt="Arbusto Imagen">
+    </div>
+
+    <div>
+      <form method="post">
+        <input type="submit" id="btnrecolectar" name="recoleccion" value="Recolectar" >
+      </form>
+    </div>
+
+    </div>
+
+    <?php
+        if(isset($_POST['recoleccion'])){
+          $Aldeano->recolectar($Arbusto);
+        }
+    ?>
+
+    <script src="js/funcionbtn.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
