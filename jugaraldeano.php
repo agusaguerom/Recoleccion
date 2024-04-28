@@ -30,7 +30,7 @@
         <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
             <div class="card-header">Aldeano</div>
             <div class="card-body">
-                <h5 class="card-title">Cantidad Recoleccion</h5>
+                <h5 class="card-title">Frutas Recolectadas</h5>
                 <p class="card-text"><?php echo $Aldeano->getTotalrecolectado(); ?></p>
             </div>
         </div>
@@ -57,17 +57,17 @@
 
 </div>
 
-<div class="row col-12">
-<div class='aldeanogif col'>
+<div class="row contenedorimagenes">
+<div class='aldeanogif col-6'>
         <img src="img/Aldeano.gif" class="imgaldeano" alt="Imagen Aldeano">
     </div>
 
-    <div class="arbustocontenedor col">
+    <div class="arbustocontenedor col-6">
     <img src="img/Arbusto.png" class= "arbustoimg" alt="Arbusto Imagen">
     </div>
 
-    <div>
-      <form method="post" class="">
+    <div class="contenedorrecolectar">
+      <form method="post" class="formrecolectar">
         <input type="submit" class="submitpersonajes" name="recoleccion" value="Recolectar" >
       </form>
     </div>
