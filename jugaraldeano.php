@@ -63,7 +63,10 @@
     </div>
 
     <div class="arbustocontenedor col-6">
-    <img src="img/Arbusto.png" class= "arbustoimg" alt="Arbusto Imagen">
+        <?php
+           echo" <img src=". $Arbusto->getimgArbusto() . " class= arbustoimg alt=Arbusto Imagen>";
+
+        ?>
     </div>
 
     <div class="contenedorrecolectar">
