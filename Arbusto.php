@@ -2,8 +2,10 @@
 
 class Arbusto{
 
-    function __construct($cantidadAlimento = 125, ){
+    function __construct($cantidadAlimento = 125, $imgarbusto = 'img/Arbusto.png'){
         $this->cantidadAlimento = $cantidadAlimento;
+        $this->imgarbusto = $imgarbusto;
+
 
     }
 
@@ -13,6 +15,13 @@ class Arbusto{
     function setAlimento($set){
         $this->cantidadAlimento = $set;
     }
+    function getimgArbusto(){
+        return $this->imgarbusto;
+    }
+    function setimgArbusto($set){
+        $this->imgarbusto = $set;
+    }
+
 
     function MostrarArbusto(){
         echo 
