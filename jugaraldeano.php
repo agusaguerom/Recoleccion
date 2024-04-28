@@ -3,9 +3,7 @@
     require_once("Arbusto.php");
     $Arbusto = new Arbusto();
 
-    
 
-    $Aldeano = new Aldeano($leer);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -65,8 +63,8 @@
     </div>
 
     <div>
-      <form method="post">
-        <input type="submit" id="btnrecolectar" name="recoleccion" value="Recolectar" >
+      <form method="post" class="">
+        <input type="submit" class="submitpersonajes" name="recoleccion" value="Recolectar" >
       </form>
     </div>
 
@@ -78,7 +76,6 @@
         }
     ?>
 
-    <script src="js/funcionbtn.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
