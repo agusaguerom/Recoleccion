@@ -42,14 +42,14 @@
         ";
 
         $totalrecolectado = $this->getTotalrecolectado();
+        $totalrecolectado += $arbusto->getAlimento();
         $this->SetTotalrecolectado($totalrecolectado);
 
-        $arbusto->setAlimento($arbusto->getAlimento() - $arbusto->getAlimento());
+        $arbusto->setAlimento(0);
     }
 
   
 
 }
-$Aldeano = new Aldeano($nombrea);
 
 ?>
