@@ -61,11 +61,16 @@
     </div>
 
     <div class="contenedorrecolectar">
-      <form method="post" class="formrecolectar">
+      <form method="post" class="formrecolectar col-3">
         <input type="submit" class="recolectaraldeano" name="recoleccion" value="Recolectar" >
       </form>
+      <div>
+      <a href="index.html" class="volverAldeano col-3">Volver</a>
+      </div>
     </div>
+    
     </div>
+
 
 
 
