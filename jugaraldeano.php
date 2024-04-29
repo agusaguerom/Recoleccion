@@ -23,11 +23,10 @@
 
 <div class="container">
 
-    <div class="row containerinfo">
 
-        <div class="contenedoraldeano"></div>
+        <div class="row contenedoraldeano">
 
-        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+        <div class="card text-white bg-success mb-3 col" style="max-width: 18rem;">
             <div class="card-header">Aldeano</div>
             <div class="card-body">
                 <h5 class="card-title">Frutas Recolectadas</h5>
@@ -35,7 +34,7 @@
             </div>
         </div>
 
-        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+        <div class="card text-white bg-success mb-3 col" style="max-width: 18rem;">
             <div class="card-header">Aldeano</div>
             <div class="card-body">
                 <h5 class="card-title">Velocidad Recoleccion</h5>
@@ -43,17 +42,9 @@
             </div>
         </div>
 
-        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-            <div class="card-header">Aldeano</div>
-            <div class="card-body">
-                <h5 class="card-title">Nombre</h5>
-                <p class="card-text"><?php echo $Aldeano->getNombre(); ?></p>
-            </div>
         </div>
-
-    </div>
-
     
+
 
 </div>
 
