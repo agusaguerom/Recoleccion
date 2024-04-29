@@ -27,9 +27,8 @@ if(isset($_POST['pescar'])){
 
     <div class="row containerinfo">
 
-        <div class="contenedoraldeano"></div>
 
-        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+        <div class="card text-white bg-success mb-3 col" style="max-width: 18rem;">
             <div class="card-header">Pesquero</div>
             <div class="card-body">
                 <h5 class="card-title">Peces Recolectados</h5>
@@ -37,7 +36,7 @@ if(isset($_POST['pescar'])){
             </div>
         </div>
 
-        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+        <div class="card text-white bg-success mb-3 col" style="max-width: 18rem;">
             <div class="card-header">Pesquero</div>
             <div class="card-body">
                 <h5 class="card-title">Velocidad Recoleccion</h5>
@@ -45,16 +44,9 @@ if(isset($_POST['pescar'])){
             </div>
         </div>
 
-        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-            <div class="card-header">Pesquero</div>
-            <div class="card-body">
-                <h5 class="card-title">Nombre</h5>
-                <p class="card-text"><?php echo $Pesquero->getNombre(); ?></p>
-            </div>
-        </div>
+    
 
     </div>
-
     
 
 </div>
