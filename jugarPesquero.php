@@ -61,11 +61,13 @@ if(isset($_POST['pescar'])){
     </div>
 
 
-    <div class="contenedorrecolectar">
-      <form method="post" class="formPescar">
-        <input type="submit" class="btnpescador" name="pescar" value="Pescar" >
-      </form>
-    </div>
+        <div class="contenedorrecolectar">
+        <form method="post" class="formPescar">
+            <input type="submit" class="btnpescador" name="pescar" value="Pescar" >
+        </form>
+        <a href="index.html" class="btnvolver">Volver</a>
+
+        </div>
 
     </div>
 
