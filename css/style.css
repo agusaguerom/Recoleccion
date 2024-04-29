@@ -4,6 +4,9 @@ body{
 .fondo2{
     background-color: #00D5FF;
 }
+.fondoaldeano{
+    background-color: #5cb85c;
+}
 #playbody{
     background-color: rgb(146, 197, 146);
 }
@@ -41,16 +44,26 @@ body{
     margin-bottom: 15px;
 }
 
-.submitpersonajes{
-    color: #F5F5F5;
-    border-radius: 5px;
-    background-color: #000;
+.formpersonajes{
+    display: flex;
+    justify-content: center;
 }
 
-.submitpersonajes:hover{
-    background-color: #402f68;
-    transition: 0.2s ease;
+.submitpersonajes {
+    background-color: #064350; 
+    color: white; 
+    font-size: 16px;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
+
+.submitpersonajes:hover {
+    background-color: #0085a1; 
+}
+
 
 .container{
     display: flex;
@@ -102,8 +115,40 @@ body{
     justify-content: center;
 }
 .formrecolectar{
-    margin: 50px;
+    text-align: center;
+    margin-top: 20px;
 }
+.recolectaraldeano {
+    background-color: #1f7722; 
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .recolectaraldeano:hover {
+    background-color: #45a049; 
+  }
+
+
+.btnpescador {
+    background-color: #fcbf49; 
+    color: #0077be; 
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.btnpescador:hover {
+    background-color: #ffde7d; 
+}
+
 .arbustocontenedor{
     width: auto;
 }
