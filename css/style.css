@@ -148,6 +148,23 @@ body{
 .btnpescador:hover {
     background-color: #ffde7d; 
 }
+.btnvolver {
+    background-color: #fcbf49; 
+    color: #0077be; 
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    text-decoration: none; 
+    margin-left: 10px; 
+}
+
+.btnvolver:hover {
+    background-color: #ffde7d; 
+}
+
 
 .arbustocontenedor{
     width: auto;
