@@ -1,9 +1,9 @@
 <?php
-    require_once('Aldeano.php');
-    require_once("Arbusto.php");
+    require_once('Clases/Aldeano.php');
+    require_once("Clases/Arbusto.php");
     $Arbusto = new Arbusto();
 
-    $Aldeano = new Aldeano($nombrea);
+    $Aldeano = new Aldeano();
 
     if(isset($_POST['recoleccion'])){
         $Aldeano->recolectar($Arbusto);
@@ -19,7 +19,7 @@
     <title>Aldeano</title>
 </head>
 
-<body class="fondo2">
+<body class="fondoaldeano">
 
 <div class="container">
 
@@ -50,7 +50,7 @@
 
 <div class="row contenedorimagenes">
 <div class='aldeanogif col-6'>
-        <img src="img/Aldeano.gif" class="imgaldeano" alt="Imagen Aldeano">
+        <img src="img/Aldeano2.gif" class="imgaldeano" alt="Imagen Aldeano">
     </div>
 
     <div class="arbustocontenedor col-6">
@@ -62,10 +62,9 @@
 
     <div class="contenedorrecolectar">
       <form method="post" class="formrecolectar">
-        <input type="submit" class="submitpersonajes" name="recoleccion" value="Recolectar" >
+        <input type="submit" class="recolectaraldeano" name="recoleccion" value="Recolectar" >
       </form>
     </div>
-
     </div>
 
 
