@@ -1,6 +1,6 @@
 <?php
-require_once("Pesquero.php");
-require_once("BancoDePesca.php");
+require_once("Clases/Pesquero.php");
+require_once("Clases/BancoDePesca.php");
 
 $Pesquero = new Pesquero($nombrea);
 $BancodePesca = new BancoDePesca();
@@ -63,7 +63,7 @@ if(isset($_POST['pescar'])){
 
     <div class="contenedorrecolectar">
       <form method="post" class="formPescar">
-        <input type="submit" class="submitpersonajes" name="pescar" value="Pescar" >
+        <input type="submit" class="btnpescador" name="pescar" value="Pescar" >
       </form>
     </div>
 
