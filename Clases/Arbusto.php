@@ -1,6 +1,6 @@
 <?php
-
-class Arbusto{
+require_once('interfaces.php');
+class Arbusto implements Recolectable{
 
     function __construct($cantidadAlimento = 125, $imgarbusto = 'img/Arbusto.png'){
         $this->cantidadAlimento = $cantidadAlimento;
