@@ -57,7 +57,6 @@ class Pesquero implements Recolector{
             $totalrecolectado += $recolectable->getAlimento();
             $this->SetTotalrecolectado($totalrecolectado);
     
-            $recolectable->setCantidadAlimento(0);
         }
     }
 
