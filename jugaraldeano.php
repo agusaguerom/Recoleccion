@@ -4,10 +4,14 @@
     $Arbusto = new Arbusto();
 
     $Aldeano = new Aldeano();
+    $yarecolecto = false;
 
+  
     if(isset($_POST['recoleccion'])){
         $Aldeano->recolectar($Arbusto);
+        $yarecolecto = true;
     }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -61,14 +65,22 @@
     </div>
 
     <div class="contenedorrecolectar">
-      <form method="post" class="formrecolectar col-3">
-        <input type="submit" class="recolectaraldeano" name="recoleccion" value="Recolectar" >
-      </form>
-      <div>
-      <a href="index.html" class="volverAldeano col-3">Volver</a>
-      </div>
+        <?php
+        if(!$yarecolecto){
+           echo "<form method=post class=formrecolectar>
+            <input type=submit class=recolectaraldeano name=recoleccion value=Recolectar>
+            </form>" ;
+        }else if($yarecolecto){
+            echo "<form action=index.html class=formrecolectar>
+            <input type=submit class=recolectaraldeano name=recoleccion value=Volver>
+            </form>";
+        }
+        ?>
+     
+
+      
     </div>
-    
+
     </div>
 
 
