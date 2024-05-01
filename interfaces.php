@@ -1,6 +1,6 @@
 <?php
 interface Recolector{
-     function recolectar($recolectable);
+     function recolectar(Recolectable $recolectable);
 }
 
 interface Recolectable{
