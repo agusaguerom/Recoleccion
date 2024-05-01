@@ -5,9 +5,11 @@ require_once("Clases/BancoDePesca.php");
 $Pesquero = new Pesquero($nombrea);
 $BancodePesca = new BancoDePesca();
 
+$yarecolecto = false;
 
 if(isset($_POST['pescar'])){
     $Pesquero->recolectar($BancodePesca);
+    $yarecolecto = true;
 }
 ?>
 
@@ -62,10 +64,18 @@ if(isset($_POST['pescar'])){
 
 
         <div class="contenedorrecolectar">
-        <form method="post" class="formPescar">
-            <input type="submit" class="btnpescador" name="pescar" value="Pescar" >
-        </form>
-        <a href="index.html" class="btnvolver">Volver</a>
+            <?php
+            if(!$yarecolecto){
+                echo "<form method=post class=formPescar>
+                <input type=submit class=btnpescador name=pescar value=Pescar>
+            </form>";
+            }else if($yarecolecto){
+                echo "<form method=post action=index.html class=formPescar>
+                <input type=submit class=btnpescador name=Volver value=Volver>
+            </form>";
+            }
+            ?>
+      
 
         </div>
 
