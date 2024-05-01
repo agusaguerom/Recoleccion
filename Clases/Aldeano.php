@@ -1,9 +1,8 @@
 <?php
     require_once("Arbusto.php");
-    require_once("interfaces.php");
 
 
-    class Aldeano {
+    class Aldeano implements Recolector{
         
         function __construct($nombre="Pepe", $velocidadrecoleccion = 18, $totalrecolectado = 0){
         $this->nombre = $nombre;
@@ -31,24 +30,23 @@
         }
         
 
-    function recolectar($arbusto){
+    function recolectar(Recolectable $recolectable){
 
-        if($arbusto->getALimento() > 0){
+        if($recolectable->getALimento() > 0){
             
-            $arbusto->setimgArbusto('img/Arbusto2.png');
-            $tiemporecoleccion = ceil($arbusto->getAlimento() / $this->velocidadrecoleccion) ;
+            $recolectable->setimgArbusto('img/Arbusto2.png');
+            $tiemporecoleccion = ceil($recolectable->getAlimento() / $this->velocidadrecoleccion) ;
             echo "<div class=contenedorrecolector>
             <h1 class=titulorecolectar> El aldeano recolecto todo en ". $tiemporecoleccion ." minutos<h1>
         
             </div>
-            <h2 class=titulorecolectar>EL arbusto quedo vacio</h2>
+            <h2 class=titulorecolectar>El arbusto quedo vacio</h2>
             ";
     
             $totalrecolectado = $this->getTotalrecolectado();
-            $totalrecolectado += $arbusto->getAlimento();
+            $totalrecolectado += $recolectable->getAlimento();
             $this->SetTotalrecolectado($totalrecolectado);
     
-            $arbusto->setAlimento(0);
         }
     }
 
