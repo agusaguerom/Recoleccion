@@ -5,7 +5,7 @@ $nombrea = "Jose";
 if(isset($_POST['nombrepescador']) && $_POST['nombrepescador'] != ""){
     $nombrea = $_POST['nombrepescador'];
 }
-class Pesquero{
+class Pesquero implements Recolector{
 
     function __construct($nombre = "Jose", $velocidadrecoleccion = 20, $totalrecolectado = 0, $imgpescador = 'img/Pescador1.gif'){
         $this->nombre = $nombre;
@@ -40,12 +40,12 @@ class Pesquero{
         $this->imgpescador = $set;
     }
 
-    function recolectar($BancoDePesca){
+    function recolectar(Recolectable $recolectable){
 
-        if($BancoDePesca->getCantidadAlimento() > 0){
+        if($recolectable->getAlimento() > 0){
 
             $this->Setimgpescador('img/Pescador2.gif');
-            $tiemporecoleccion = ceil($BancoDePesca->getCantidadAlimento() / $this->velocidadrecoleccion) ;
+            $tiemporecoleccion = ceil($recolectable->getAlimento() / $this->velocidadrecoleccion) ;
             echo "<div class=contenedorrecolector>
             <h1 class=titulorecolectar> El Pescador recolecto todo en ". $tiemporecoleccion ." minutos<h1>
         
@@ -54,10 +54,10 @@ class Pesquero{
             ";
 
             $totalrecolectado = $this->getTotalrecolectado();
-            $totalrecolectado += $BancoDePesca->getCantidadAlimento();
+            $totalrecolectado += $recolectable->getAlimento();
             $this->SetTotalrecolectado($totalrecolectado);
     
-            $BancoDePesca->setCantidadAlimento(0);
+            $recolectable->setCantidadAlimento(0);
         }
     }
 
