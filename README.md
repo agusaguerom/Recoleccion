@@ -1,8 +1,8 @@
 # Recoleccion
 Trabajo Practico para la Materia Produccion Web, realizado con
 
--HTML
+*HTML
 *CSS
 *PHP
-+Bootstrap
+*Bootstrap
 
